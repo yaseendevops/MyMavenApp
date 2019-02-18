@@ -1,7 +1,7 @@
 pipeline {
     agent any
     tools {
-        tool name: 'M3', type: 'maven'
+        maven 'M3'
     }
     stages {
         stage('git') {
